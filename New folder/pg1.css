@@ -1,0 +1,138 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #2A4494;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 140px;
+  
+}
+
+.sidenav a {
+  padding: 30px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  z-index: 999;
+  font-weight: bold;
+}
+
+.sidenav a:hover{
+  color: #FFD391;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 999;
+}
+
+.main {
+	height: 105vh;
+	width: 101.4%;
+	border: 1px solid #12223B;
+	margin-top: -48px;
+	z-index: -999;
+	margin-left: -1%
+}
+
+.main1 {
+	height: 105vh;
+	width: 101.4%;
+	margin-left: -0.9%
+}
+
+.t1 {
+	height: 60%;
+	width: 42%;
+	margin-top: -43%;
+	margin-left: 45%;
+}
+
+.pur {
+  padding: 5px 10px;
+  text-align: center;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: #FFD391; 
+  color: #12223B;
+  font-weight: bold;
+  border: 0;
+  float: right;
+  margin-top: -37%;
+  margin-right: 5% 
+}
+
+.pur:hover {
+  background-color: #12223B;
+  color: #FFD391;
+}
+
+
+
+
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: -10%
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.buy {
+  padding: 15px 30px;
+  text-align: center;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 25px;
+  background-color: #12223B; 
+  color: white;
+  font-weight: bold;
+  border: 0;
+  margin-left: 45%;
+  position: absolute;
+  margin-top: 1%; 
+}
+
+.buy:hover {
+  background-color: white;
+  color: #12223B;
+}

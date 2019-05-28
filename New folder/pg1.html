@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="pg1.css">
+</head>
+
+	<style>
+		body {
+  			font-family: "Lato", sans-serif;
+		}
+		html {
+ 		 scroll-behavior: smooth;
+		}
+
+		
+
+</style>
+<body>
+
+	<!---	Start 
+	-->
+	<span style="font-size:30px;cursor:pointer; z-index: 999; color: white" onclick="openNav()">&#9776;</span>
+
+	<div class="main" style="background-color: #12223B;">
+
+		<h1 style="color: white; font-size: 80px; margin-top: 130px; margin-left: 15%;">Stift.</h1>
+		<div style="height: 300px; width: 30%; margin-left: 15%; margin-top: -5%; font-family: playfair; color: #F8CF8F">
+			<p style="font-size: 30px; font-weight: bold; margin-top: 16%">WRITE THE IMPOSSIBLE</p>
+			<br>
+			<p style="font-size: 30px; letter-spacing: 4px">Immerse yourself in the luxurious world of pens.</p>
+		</div>
+
+		<img src="Pen-PNG.png" style="transform: rotate(90deg); margin-top: -27%; margin-left: 49%; position: absolute;">
+		<img src="group 11.png" height="100%" style="float: right; margin-top: -39%">
+			<a href="#2" style="text-decoration: none; "><p style="transform: rotate(90deg); margin-left: 88%; font-size: 20px; margin-top: -3%; color: white;">Discover more &rarr;</p></a>
+	</div>
+
+
+	<div id="Side" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" style="margin-left: 10%">Home</a>
+  <a href="#2" style="margin-left: 10%">Purchase</a>
+  <a href="#" style="margin-left: 10%">About us</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("Side").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("Side").style.width = "0";
+}
+</script>
+
+
+	<!-- Second -->
+
+
+	<div class="main1" style="background-color: #12223B" id="2">
+		<span style="font-size:30px;cursor:pointer; z-index: 999; color: white; margin-left: 1%; position: absolute; margin-top: 2%" onclick="openNav()">&#9776;</span>
+
+
+		<img src="1.png" height="80%" style="margin-top: 10%; position: relative; ">
+
+		<div class="t1">
+			<h1 style="font-size: 70px; font-weight: bold; font-family: playfair; color: #F8CF8F">Minimalist Design</h1>
+			<p style="color: white; font-size: 33px; font-weight: lighter; text-align: right; font-family: tittilium web
+				">Stift 42 has been stripped away of all unnecessary elements and focuses on what needs to be there.</p>
+		</div>
+
+
+		<button class="pur">Purchase</button>
+
+	</div> 	
+
+	<!-- Third -->
+
+	<div class="main1" style="background-color: #F4FFF8; z-index: 1;">
+
+		<span style="font-size:30px;cursor:pointer; z-index: 999; color: #2A4494; margin-left: 1%;  margin-top: 2%" onclick="openNav()">&#9776;</span>
+		<h1 style="color: #2A4494; text-align: center; font-size: 60px; margin-top: 5%; position: relative;">Variety is key</h1>
+		<p style="font-size: 30px; text-align: center; color: #070734">Stift 42 is a writing implement with a point from which ink flows</p>
+
+		<div class="slideshow">
+
+<div class="slide fade">
+  <img src="blue.png" style="width:100%">
+</div>
+
+<div class="slide fade">
+  <img src="Pen-PNG.png" style="width:100%">
+</div>
+
+<div class="slide fade">
+  <img src="blue.png" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center; margin-top: -25%">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500);
+}
+</script>
+
+	<button class="buy">Buy Now</button>		
+	
+	</div>
+
+</body>
+</html>
